@@ -45,11 +45,18 @@ Open the terminal and write-
 pip install pymongo
 ```
 
-2. Connection
-```python
-from pymongo import MongoClient
+2. Connection to database
+You will find the code here-
 
-if __name__ == "__main__":
-    print("Welcome to pyMongo")
-    client = MongoClient("mongodb://localhost:27017")
-```
+[MongoDB connection](connect.py)
+
+3. Insertion of Documents
+You will find the code here-
+
+[MongoDB insert](insert.py)
+
+4. Finding document in your database
+You will find the code here-
+
+[MongoDB find](find.py)
+
