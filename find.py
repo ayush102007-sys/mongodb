@@ -20,6 +20,6 @@ if __name__ == "__main__":
         print(item)
 
     # To get specific fields form your document
-    sp_docs = collection.find({"name": "Ankush"}, {"name": 1, "_id": 0})
+    sp_docs = collection.find({"name": "Ankush"}, {"name": 1, "_id": 0}).limit(1)   # To limit no. of occurences
     for field in sp_docs:
-            print(field)    
+        print(field)    
