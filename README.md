@@ -68,3 +68,15 @@ You will find the code here-
 You will find the code here-
 
 [MongoDB show](show_db_col.py)
+
+6. Updating records in Database
+
+You will find the code here-
+
+[MongoDB update](update.py)
+
+7. Deleting records from Database
+
+You will find the code here-
+
+[MongoDB delete](delete.py)
