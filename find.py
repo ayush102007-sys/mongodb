@@ -5,7 +5,7 @@ if __name__ == "__main__":
     client = MongoClient("mongodb://localhost:27017")
     db = client["tset-database"]
     collection = db["test-collection"]
-
+    
     # Pulling one document (It is a random process)
     one = collection.find_one()
     print(one)
@@ -23,3 +23,15 @@ if __name__ == "__main__":
     sp_docs = collection.find({"name": "Ankush"}, {"name": 1, "_id": 0}).limit(1)   # To limit no. of occurences
     for field in sp_docs:
         print(field)    
+
+    # To find applying filters
+    filtered_docs = collection.find({"name": "Ankush", "age": {"$gte": 20}})
+    for record in filtered_docs:
+        print(record)
+
+    """ 
+        also other modifiers are -     
+        1. $lt -> less than
+        2. $lte -> less than or equals to
+        3. $gt -> greater than
+    """
