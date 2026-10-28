@@ -63,3 +63,8 @@ You will find the code here-
 
 [MongoDB find](find.py)
 
+5. Showing Databases and Collection Names
+
+You will find the code here-
+
+[MongoDB show](show_db_col.py)
