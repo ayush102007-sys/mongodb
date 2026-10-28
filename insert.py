@@ -21,6 +21,7 @@ if __name__ == "__main__":
     ]
     collection.insert_many(dict2)
 
+    # Initializing _id by your own (To prevent generating of CUSTOM _id)
     dict3 = [
             {"_id": 1,"name": "Ankush", "age": 19, "country": "India"},
             {"_id": 2,"name": "Tom", "age": 21, "country": "England"},
