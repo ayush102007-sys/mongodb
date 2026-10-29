@@ -27,6 +27,21 @@ if __name__ == "__main__":
     for rec_3 in result_3:
         print(rec_3["name"])
 
+    # a) Special uses:- (explicit use of and with other operators)
+    result_3_1 = collection.find({
+        "$and": [
+            {
+                "$or" : [
+                    {"key1": "val1"},
+                    {"key2": "val2"}
+                ]},
+            {
+                "$or" : [
+                    {"key1": "val1"},
+                    {"key2": "val2"}
+                ]}
+        ]})
+
     # using membership operators (in, not in)
     result_4 = collection.find({
         "topic": {"$in": ["Solar System", "AI"]}
