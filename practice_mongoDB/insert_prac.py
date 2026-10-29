@@ -15,7 +15,7 @@ if __name__ == "__main__":
     }
     # collection.insert_one(user_1)
 
-    """users = [
+    users_1 = [
         {
         "_id" : "u2",
         "name": "Ramu",
@@ -29,9 +29,9 @@ if __name__ == "__main__":
         "score" : 11
         } 
     ]
-    collection.insert_many(users)"""
+    collection.insert_many(users_1)
 
-    users = [
+    users_2 = [
         {
         "_id" : "u4",
         "name": "Binoy",
@@ -51,5 +51,5 @@ if __name__ == "__main__":
         "score" : 15
         }
     ]
-    collection.insert_many(users)
+    collection.insert_many(users_2)
     
