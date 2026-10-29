@@ -13,7 +13,7 @@ if __name__ == "__main__":
         "topic": "Solar System",
         "score" : 12
     }
-    # collection.insert_one(user_1)
+    collection.insert_one(user_1)
 
     users_1 = [
         {
@@ -53,3 +53,6 @@ if __name__ == "__main__":
     ]
     collection.insert_many(users_2)
     
+
+    result_arr = {"_id": "scores","result_list": [12,14,11,10,9,15]}
+    collection.insert_one(result_arr)
