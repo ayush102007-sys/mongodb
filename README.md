@@ -80,3 +80,12 @@ You will find the code here-
 You will find the code here-
 
 [MongoDB delete](delete.py)
+
+
+### Practices (MongoDB)
+
+> This is the part where I have wraped up by practicing all the pyMongo **CRUD Operations** 
+
+This is the folder that has all the practiced .py files..
+
+[pyMongo](practice_mongoDB)
